@@ -1,10 +1,8 @@
-// AI Tic-Tac-Toe Game // Coded by Soumyadip // For CodSoft Internship Task-3 //
-
 #include<bits/stdc++.h>
 #include<iostream>
 #include<string>
 #include<map>
-// #include<algorithm>
+#include<algorithm>
 
 using namespace std;
 
@@ -43,7 +41,7 @@ void User1Turn(int board[])
     if(board[pos-1] != 0)
     {
         cout<<endl<<"Wrong Move.!!!"<<endl;
-        // board[pos-1] = 1;
+
         ConstBoard(board);
         User1Turn(board);
     }
@@ -61,7 +59,7 @@ void User2Turn(int board[])
     if(board[pos-1] != 0)
     {
         cout<<endl<<"Wrong Move.!!!"<<endl;
-        // board[pos-1] = -1;
+        
         ConstBoard(board);
         User2Turn(board);
     }
